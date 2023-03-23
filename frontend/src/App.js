@@ -29,6 +29,7 @@ const App = () => {
     }
 
   }, [searchTerm])
+  
   useEffect(()=>{
     const movieFave= JSON.parse(localStorage.getItem("movie-add-favourites"))
     setFavourites(movieFave)
@@ -69,6 +70,25 @@ const App = () => {
       <div className='row'>
         <MovieList movies={favourites} handleFavourites={removeFavourite} favouritesComp={RemoveFavourites} />
       </div>
+      <div className='row d-flex align-items-center mt-4 mb-4'>
+        <MovieListHeading heading={"Action Movies"} />
+      </div>
+      <div className='row'>
+        <MovieList movies={movies.filter((movie)=>{return(movie.category==="Action")})} handleFavourites={addFavourite} favouritesComp={AddFavourites} />
+      </div>
+      <div className='row d-flex align-items-center mt-4 mb-4'>
+        <MovieListHeading heading={"Horror Movies"} />
+      </div>
+      <div className='row'>
+        <MovieList movies={movies.filter((movie)=>{return(movie.category==="Horror")})} handleFavourites={addFavourite} favouritesComp={AddFavourites} />
+      </div>
+      <div className='row d-flex align-items-center mt-4 mb-4'>
+        <MovieListHeading heading={"Comedy Movies"} />
+      </div>
+      <div className='row'>
+        <MovieList movies={movies.filter((movie)=>{return(movie.category==="Comedy")})} handleFavourites={addFavourite} favouritesComp={AddFavourites} />
+      </div>
+      
     </div>
   )
 }
