@@ -1,0 +1,30 @@
+[
+    {
+        "name": "The Purge",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTQzNTcwODEyM15BMl5BanBnXkFtZTcwMjM1MDI0OQ@@._V1_.jpg",
+        "yearReleased": "2013",
+        "language": "English",
+        "director": "James DeMonaco",
+        "category": "Horror",
+        "trailer": "https://www.youtube.com/watch?v=K0LLaybEuzA"
+    },
+    {
+        "name": "Extraction",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDBkOWNiMTYtMjlkZS00NzJlLTg0ZmUtN2YwYWQ3N2I3N2Y0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+        "yearReleased": "2020",
+        "language": "English",
+        "director": "Sam Hargrave",
+        "category": "Action",
+        "trailer": "https://www.youtube.com/watch?v=L6P3nI6VnlY"
+    },
+    {
+        "name": "Central Intelligence",
+        "imageUrl": "https://i.pinimg.com/originals/70/e8/90/70e890f35f4935a0f0b365786b9383f4.jpg",
+        "yearReleased": "2016",
+        "language": "English",
+        "director": "Rawson Marshall Thurber",
+        "category": "Comedy",
+        "trailer": "https://www.youtube.com/watch?v=K0LLaybEuzA"
+    }
+
+]
