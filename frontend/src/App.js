@@ -29,6 +29,14 @@ const App = () => {
       }).catch(err => { console.log(err); })
     }
   }, [searchTerm])
+<<<<<<< HEAD
+=======
+  
+  useEffect(()=>{
+    const movieFave= JSON.parse(localStorage.getItem("movie-add-favourites"))
+    setFavourites(movieFave)
+  },[])
+>>>>>>> f53913a92f31c91c2b4349dfa07b70ae53dab1d8
 
   useEffect(() => {
     const movieFave = JSON.parse(localStorage.getItem("movie-add-favourites"))
@@ -80,21 +88,35 @@ const App = () => {
         <MovieListHeading heading={"Action Movies"} />
       </div>
       <div className='row'>
+<<<<<<< HEAD
         <MovieList movies={movies.filter((movie) => { return (movie.category === "Action") })} handleFavourites={addFavourite} favouritesComp={AddFavourites} />
+=======
+        <MovieList movies={movies.filter((movie)=>{return(movie.category==="Action")})} handleFavourites={addFavourite} favouritesComp={AddFavourites} />
+>>>>>>> f53913a92f31c91c2b4349dfa07b70ae53dab1d8
       </div>
       <div className='row d-flex align-items-center mt-4 mb-4'>
         <MovieListHeading heading={"Horror Movies"} />
       </div>
       <div className='row'>
+<<<<<<< HEAD
         <MovieList movies={movies.filter((movie) => { return (movie.category === "Horror") })} handleFavourites={addFavourite} favouritesComp={AddFavourites} />
+=======
+        <MovieList movies={movies.filter((movie)=>{return(movie.category==="Horror")})} handleFavourites={addFavourite} favouritesComp={AddFavourites} />
+>>>>>>> f53913a92f31c91c2b4349dfa07b70ae53dab1d8
       </div>
       <div className='row d-flex align-items-center mt-4 mb-4'>
         <MovieListHeading heading={"Comedy Movies"} />
       </div>
       <div className='row'>
+<<<<<<< HEAD
         <MovieList movies={movies.filter((movie) => { return (movie.category === "Comedy") })} handleFavourites={addFavourite} favouritesComp={AddFavourites} />
       </div>
 
+=======
+        <MovieList movies={movies.filter((movie)=>{return(movie.category==="Comedy")})} handleFavourites={addFavourite} favouritesComp={AddFavourites} />
+      </div>
+      
+>>>>>>> f53913a92f31c91c2b4349dfa07b70ae53dab1d8
     </div>
   )
 }
