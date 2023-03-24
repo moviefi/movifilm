@@ -43,7 +43,6 @@ const App = () => {
 
   const logo= ()=>{
     return (
-      
       <img src="https://flyclipart.com/thumb2/movie-camera-clip-art-clipart-images-68664.png"> </img>
     ) 
    }
